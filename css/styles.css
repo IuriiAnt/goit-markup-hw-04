@@ -146,6 +146,19 @@ a {
 
 /*=====END HEADER=====*/
 /*=====HERO=====*/
+.background {
+width: 1600px;
+height: 600px;
+align-items: center;
+margin-right: auto;
+margin-left: auto;
+background-size: 1600px 600px;
+background-image: url(/images/background/hero-background.jpg);
+background-position: center;
+text-align: center;
+margin: 0 auto;
+
+}
 .hero {
   background-color: var(--black-background-color);
   text-align: center;
