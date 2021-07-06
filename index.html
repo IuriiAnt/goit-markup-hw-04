@@ -21,16 +21,16 @@
     <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
-                <a class="logo" href="./index.html"> Web<span class="logo-black">Studio</span></a>
+                <a class="logo" href="./index.html">Web<span class="logo-black">Studio</span></a>
                 <ul class="menu">
                     <li class="menu-item">
-                        <a class="menu-link" href="./index.html">Студия</a>
+                        <a class="menu-link active-link" href="./index.html">Студия</a>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="#">Контакты</a>
+                        <a class="menu-link " href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -48,7 +48,7 @@
     <!-- END HEADER -->
     <main>
         <!-- HERO -->
-        <section class="hero background">
+        <section class="hero">
             <h1 class="hero-title">
                 Эффективные решения <br />
                 для вашего бизнеса
@@ -94,8 +94,8 @@
         <!--WHAT WE DO-->
         <section>
             <h2 class="what-we-do">Чем мы занимаемся</h2>
-            <div class="container-wwd">
-                <ul class="what-we-do-list flex-container-wwd">
+            <div class="wwd-container">
+                <ul class=" flex-container-wwd">
                     <li class="container-wwd-img">
                         <img src="./images/what-we-do/wwd-1.jpg" alt="клавиатура" width="370" height="294" />
                     </li class="container-wwd-img">
@@ -112,29 +112,37 @@
         <!--OUR TEAM-->
         <section class="our-team-back-col">
             <div class="container section">
-                <h2 class="our-team team-title">Наша команда</h2>
+                <h2 class="our-team">Наша команда</h2>
                 <ul class="teamates-list">
                     <li class="teamates-list-item">
                         <img src="./images/team/igor-demyanenko-1.jpg" alt="Игорь Демьяненко" width="270"
                             height="260" />
-                        <h3 class="names-team">Игорь Демьяненко</h3>
-                        <p class="position-team" lang="en">Product Developer</p>
+                        <div class="teamate-description">
+                            <h3 class="names-team">Игорь Демьяненко</h3>
+                            <p class="position-team" lang="en">Product Developer</p>
+                        </div>
                     </li>
                     <li class="teamates-list-item">
                         <img src=" ./images/team/olga-repina-2.jpg" alt="Ольга Репина" width="270" height="260" />
-                        <h3 class="names-team">Ольга Репина</h3>
-                        <p class="position-team" lang="en">Frontend Developer</p>
+                        <div class="teamate-description">
+                            <h3 class="names-team">Ольга Репина</h3>
+                            <p class="position-team" lang="en">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="teamates-list-item">
                         <img src=" ./images/team/nikolay-tarasov-3.jpg" alt="Николай Тарасов" width="270"
                             height="260" />
-                        <h3 class="names-team">Николай Тарасов</h3>
-                        <p class="position-team" lang="en">Marketing</p>
+                        <div class="teamate-description">
+                            <h3 class="names-team">Николай Тарасов</h3>
+                            <p class="position-team" lang="en">Marketing</p>
+                        </div>
                     </li>
                     <li class="teamates-list-item">
                         <img src=" ./images/team/mihail-ermakov-4.jpg" alt="Михаил Ермаков" width="270" height="260" />
-                        <h3 class="names-team">Михаил Ермаков</h3>
-                        <p class="position-team" lang="en">IU Designer</p>
+                        <div class="teamate-description">
+                            <h3 class="names-team">Михаил Ермаков</h3>
+                            <p class="position-team" lang="en">IU Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -149,13 +157,11 @@
             <address>
                 <ul>
                     <li>
-                        <a class="address" href="https://goo.gl/maps/QvbrtsybP3qZeNid7" target="_blank"
-                            rel="noopener noreferrer">г.
-                            Киев,
-                            пр-т Леси Украинки, 26</a>
+                        <a class="address address-footer" href="https://goo.gl/maps/QvbrtsybP3qZeNid7" target="_blank"
+                            rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
                     <li>
-                        <a class="mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="mail-link mail-link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li>
                         <a class="tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
