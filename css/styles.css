@@ -386,19 +386,19 @@ a {
 /*===========END OUR TEAM==========*/
 
 /*============= Our clients==============*/
-.clients-list {
+.client-list {
   display: flex;
   margin-top: calc(-1 * var(--margin));
   margin-left: calc(-1 * var(--margin));
 }
 
-.clients-list-items {
+.client-list-items {
   flex-basis: calc(100% / 4 - 30px);
   margin-top: var(--margin);
   margin-left: var(--margin);
 }
 
-.clients-links {
+.client-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -408,18 +408,18 @@ a {
   border-radius: 4px;
 }
 
-.clients-links-icons {
+.client-link-icons {
   fill: var(--social-links);
 }
 
-.clients-links:hover,
-.clients-links:focus {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
-.clients-links:hover .clients-links-icons,
-.clients-links:focus .clients-links-icons {
+.client-link:hover .client-link-icons,
+.client-link:focus .client-link-icons {
   fill: var(--accent-color);
 }
 
