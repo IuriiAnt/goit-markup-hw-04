@@ -456,10 +456,6 @@ a {
   padding-bottom: 60px;
   background-color: var(--background-grey-color);
 }
-.flex-position {
-  display: flex;
-  align-items: baseline;
-}
 .studio-footer {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -470,6 +466,10 @@ a {
 }
 .adress-list-link:not(:last-child) {
   margin-bottom: 9px;
+  margin-top: 20px;
+}
+.footer-address {
+  font-style: inherit;
   margin-top: 20px;
 }
 
@@ -504,7 +504,7 @@ a {
   background-color: var(--social-links-bg-f);
 }
 
-.social-link-icon.f-link-color {
+.social-link-icon.footer-icon-color {
   fill: var(--title-text-color);
 }
 
@@ -521,13 +521,9 @@ a {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-bottom: 20px;
-}
-
-.social-link-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 /*=========END FOOTER==========*/
