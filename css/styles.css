@@ -24,6 +24,8 @@
   --social-links-bg-f: rgba(255, 255, 255, 0.1);
   --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  --portfolio-flex-element-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -133,7 +135,7 @@ a {
 }
 .menu-link,
 .mail-link,
-.tel-link-header {
+.tel-link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -163,8 +165,8 @@ a {
 .mail-link:focus {
   color: var(--accent-color);
 }
-.tel-link-header:hover,
-.tel-link-header:focus {
+.tel-link:hover,
+.tel-link:focus {
   color: var(--accent-color);
 }
 .menu-icon {
@@ -263,8 +265,8 @@ a {
 .about-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--margin));
-  margin-left: calc(-1 * var(--margin));
+  /*  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin)); */
   justify-content: space-between;
 }
 .about-list-element {
@@ -291,6 +293,11 @@ a {
 /*===========END ABOUT==========*/
 /*===========WHAT WE DO==========*/
 /*=========== END WHAT WE DO==========*/
+
+.section-wwd {
+  margin-bottom: 50px;
+}
+
 .what-we-do {
   padding-top: 0px;
 }
@@ -310,8 +317,9 @@ a {
 .wwd-cotainer {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--margin));
-  margin-left: calc(-1 * var(--margin));
+  justify-content: space-between;
+  /* margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin)); */
 }
 
 .wwd-img:not(:last-child) {
@@ -518,6 +526,7 @@ a {
 }
 
 .join-us {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -570,10 +579,7 @@ a {
   margin-top: calc(-1 * var(--margin));
   margin-left: calc(-1 * var(--margin));
 }
-.portfolio-flex-element:hover,
-.portfolio-flex-element:focus {
-  box-shadow: var(--box-shadow-pr);
-}
+
 .portfolio-flex-element {
   flex-basis: calc(100% / 3 - var(--margin));
   margin-top: var(--margin);
@@ -600,6 +606,14 @@ a {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
+}
+.portfolio-flex-element:hover,
+.portfolio-flex-element:focus {
+  box-shadow: var(--portfolio-flex-element-shadow);
+}
+.projects-link,
+.projects-link:visited {
+  color: var(--primary-color);
 }
 /*===END PORTFOLIO MAIN SECTION===*/
 /*=========END PORTFOLIO PAGE=====*/
